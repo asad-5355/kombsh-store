@@ -5,105 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>متاجر كمبش - منصة متاجر المطاعم</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-            <a class="navbar-brand" href="#">متاجر كمبش</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="#features">المميزات</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#how-it-works">كيف تعمل</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#restaurants">المطاعم</a></li>
-                </ul>
-                <a href="register.html" class="btn btn-primary">إنشاء متجر مجاني</a>
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-store"></i> متاجر كمبش
+            </a>
+            <div class="d-flex">
+                <a href="login.html" class="btn btn-light me-2">تسجيل الدخول</a>
+                <a href="register.html" class="btn btn-outline-light">إنشاء متجر</a>
             </div>
         </div>
     </nav>
 
     <header class="hero-section">
-        <div class="container text-center py-5">
-            <h1 class="display-4">أنشئ متجرك الإلكتروني للمطعم مجانًا</h1>
-            <p class="lead">منصة متاجر كمبش توفر لك كل ما تحتاجه لعرض وجباتك ووصولك للعملاء بسهولة</p>
-            <a href="register.html" class="btn btn-primary btn-lg mt-3">ابدأ الآن مجانًا</a>
+        <div class="container text-center py-5 text-white">
+            <h1 class="display-4 fw-bold">أنشئ متجرك الإلكتروني في دقائق</h1>
+            <p class="lead fs-4">منصة متكاملة لإدارة متجرك مع لوحة تحكم سهلة الاستخدام</p>
+            <div class="d-flex justify-content-center gap-3 mt-4">
+                <a href="register.html" class="btn btn-primary btn-lg px-4">ابدأ مجاناً</a>
+                <a href="#features" class="btn btn-outline-light btn-lg px-4">المميزات</a>
+            </div>
         </div>
     </header>
 
     <section id="features" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-5">لماذا تختار متاجر كمبش؟</h2>
-            <div class="row">
-                <div class="col-md-4 text-center">
-                    <div class="feature-icon mb-3">💯</div>
-                    <h3>مجاني بالكامل</h3>
-                    <p>لا توجد رسوم خفية، كل الخدمات متاحة لك بدون أي تكلفة</p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="feature-icon mb-3">⚡</div>
-                    <h3>سهل الاستخدام</h3>
-                    <p>لوحة تحكم بسيطة تمكنك من إدارة متجرك في دقائق</p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="feature-icon mb-3">📱</div>
-                    <h3>متوافق مع الجوال</h3>
-                    <p>متجرك يعمل بشكل مثالي على جميع الأجهزة</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="how-it-works" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">كيف تنشئ متجرك في 3 خطوات</h2>
-            <div class="row">
+            <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <span class="step-number">1</span>
-                            <h4 class="card-title">سجل حسابك</h4>
-                            <p class="card-text">املأ نموذج التسجيل البسيط لإنشاء حسابك</p>
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-bolt fa-3x text-primary"></i>
+                            </div>
+                            <h3>سهل وسريع</h3>
+                            <p class="text-muted">أنشئ متجرك في دقائق بدون حاجة لأي خبرة تقنية</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <span class="step-number">2</span>
-                            <h4 class="card-title">أضف منتجاتك</h4>
-                            <p class="card-text">قم بإضافة وجباتك وصورها وأسعارها</p>
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-cog fa-3x text-primary"></i>
+                            </div>
+                            <h3>لوحة تحكم متكاملة</h3>
+                            <p class="text-muted">أدوات متكاملة لإدارة منتجاتك وطلباتك وعملائك</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <span class="step-number">3</span>
-                            <h4 class="card-title">شارك متجرك</h4>
-                            <p class="card-text">احصل على رابط متجرك وشاركه مع عملائك</p>
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-link fa-3x text-primary"></i>
+                            </div>
+                            <h3>رابط خاص بك</h3>
+                            <p class="text-muted">احصل على رابط فريد لمتجرك يمكنك مشاركته مع عملائك</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="restaurants" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">مطاعم تستخدم متاجر كمبش</h2>
-            <div class="row" id="restaurants-list">
-                <!-- سيتم ملؤها بالبيانات من JavaScript -->
             </div>
         </div>
     </section>
 
     <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>جميع الحقوق محفوظة &copy; 2023 متاجر كمبش</p>
-            <p class="mb-0">منصة متاجر المطاعم المجانية</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-store"></i> متاجر كمبش</h5>
+                    <p>منصة متكاملة لإنشاء وإدارة متاجر المطاعم الإلكترونية</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">الرئيسية</a></li>
+                        <li><a href="#" class="text-white-50">المميزات</a></li>
+                        <li><a href="#" class="text-white-50">الأسعار</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>اتصل بنا</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope me-2"></i> noorcombsh@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">جميع الحقوق محفوظة &copy; 2023 متاجر كمبش</p>
+            </div>
         </div>
     </footer>
 
