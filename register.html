@@ -6,124 +6,160 @@
     <title>إنشاء متجر جديد - متاجر كمبش</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="bg-light">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <i class="fas fa-store"></i> متاجر كمبش
-            </a>
-        </div>
-    </nav>
-
-    <div class="container py-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="card shadow-sm border-0">
-                    <div class="card-header bg-white border-0 pt-4">
-                        <h2 class="text-center mb-0">إنشاء متجر جديد</h2>
+<body class="register-page">
+    <div class="register-container">
+        <div class="register-card">
+            <div class="register-header">
+                <img src="images/logo.png" alt="متاجر كمبش" height="50">
+                <h2>أنشئ متجرك الآن</h2>
+                <p>ابدأ رحلتك في عالم التجارة الإلكترونية في دقائق</p>
+            </div>
+            
+            <form id="registerForm" class="register-form">
+                <!-- خطوات التسجيل -->
+                <div class="steps-indicator">
+                    <div class="step active" data-step="1">
+                        <span>1</span>
+                        <p>المعلومات الأساسية</p>
                     </div>
-                    <div class="card-body px-5 py-4">
-                        <form id="registerForm">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <label for="name" class="form-label">اسم المتجر</label>
-                                    <input type="text" class="form-control" id="name" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="email" class="form-label">البريد الإلكتروني</label>
-                                    <input type="email" class="form-control" id="email" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="phone" class="form-label">رقم الهاتف</label>
-                                    <input type="tel" class="form-control" id="phone" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="password" class="form-label">كلمة المرور</label>
-                                    <input type="password" class="form-control" id="password" required>
-                                </div>
-                                <div class="col-12">
-                                    <label for="address" class="form-label">عنوان المتجر</label>
-                                    <textarea class="form-control" id="address" rows="2" required></textarea>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="currency" class="form-label">العملة</label>
-                                    <select class="form-select" id="currency" required>
-                                        <option value="SAR">ريال سعودي (SAR)</option>
-                                        <option value="USD">دولار أمريكي (USD)</option>
-                                        <option value="EUR">يورو (EUR)</option>
-                                        <option value="AED">درهم إماراتي (AED)</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="language" class="form-label">اللغة</label>
-                                    <select class="form-select" id="language" required>
-                                        <option value="ar">العربية</option>
-                                        <option value="en">English</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="terms" required>
-                                        <label class="form-check-label" for="terms">
-                                            أوافق على <a href="#">شروط الاستخدام</a> و <a href="#">سياسة الخصوصية</a>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-12 mt-4">
-                                    <button type="submit" class="btn btn-primary w-100 py-2">
-                                        <i class="fas fa-store me-2"></i> إنشاء المتجر
-                                    </button>
-                                </div>
-                                <div class="col-12 text-center">
-                                    <p class="mb-0">لديك حساب بالفعل؟ <a href="login.html">سجل الدخول</a></p>
-                                </div>
-                            </div>
-                        </form>
+                    <div class="step" data-step="2">
+                        <span>2</span>
+                        <p>إعدادات المتجر</p>
+                    </div>
+                    <div class="step" data-step="3">
+                        <span>3</span>
+                        <p>الانتهاء</p>
                     </div>
                 </div>
-            </div>
+                
+                <!-- الخطوة 1 -->
+                <div class="step-content active" data-step="1">
+                    <div class="mb-3">
+                        <label for="storeName" class="form-label">اسم المتجر</label>
+                        <input type="text" class="form-control" id="storeName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="ownerName" class="form-label">اسم صاحب المتجر</label>
+                        <input type="text" class="form-control" id="ownerName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">البريد الإلكتروني</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">رقم الهاتف</label>
+                        <input type="tel" class="form-control" id="phone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">كلمة المرور</label>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary next-step">التالي <i class="fas fa-arrow-left ms-2"></i></button>
+                    </div>
+                </div>
+                
+                <!-- الخطوة 2 -->
+                <div class="step-content" data-step="2">
+                    <div class="mb-3">
+                        <label for="storeLogo" class="form-label">شعار المتجر</label>
+                        <div class="logo-upload-container">
+                            <input type="file" id="storeLogo" accept="image/*" class="d-none">
+                            <label for="storeLogo" class="logo-upload-label">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <span>اختر صورة الشعار</span>
+                            </label>
+                            <div class="logo-preview d-none">
+                                <img id="logoPreview" src="#" alt="Preview">
+                                <button type="button" class="btn btn-sm btn-danger remove-logo">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="storeDescription" class="form-label">وصف المتجر</label>
+                        <textarea class="form-control" id="storeDescription" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="storeAddress" class="form-label">عنوان المتجر</label>
+                        <textarea class="form-control" id="storeAddress" rows="2" required></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="currency" class="form-label">العملة</label>
+                            <select class="form-select" id="currency" required>
+                                <option value="SAR">ريال سعودي (ر.س)</option>
+                                <option value="USD">دولار أمريكي ($)</option>
+                                <option value="EUR">يورو (€)</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="language" class="form-label">اللغة الأساسية</label>
+                            <select class="form-select" id="language" required>
+                                <option value="ar">العربية</option>
+                                <option value="en">الإنجليزية</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <button type="button" class="btn btn-outline-secondary prev-step">
+                            <i class="fas fa-arrow-right me-2"></i> السابق
+                        </button>
+                        <button type="button" class="btn btn-primary next-step">
+                            التالي <i class="fas fa-arrow-left ms-2"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- الخطوة 3 -->
+                <div class="step-content" data-step="3">
+                    <div class="success-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="text-center mb-3">أنت جاهز للبدء!</h3>
+                    <p class="text-center mb-4">تم إنشاء حسابك بنجاح، يمكنك الآن البدء في إدارة متجرك</p>
+                    
+                    <div class="store-info-card">
+                        <h5>معلومات متجرك</h5>
+                        <div class="store-info-item">
+                            <span>اسم المتجر:</span>
+                            <span id="finalStoreName"></span>
+                        </div>
+                        <div class="store-info-item">
+                            <span>رابط المتجر:</span>
+                            <span id="finalStoreUrl">kambsh.com/stores/<span id="storeSlug"></span></span>
+                        </div>
+                        <div class="store-info-item">
+                            <span>البريد الإلكتروني:</span>
+                            <span id="finalStoreEmail"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                        <label class="form-check-label" for="agreeTerms">
+                            أوافق على <a href="#">شروط الاستخدام</a> و <a href="#">سياسة الخصوصية</a>
+                        </label>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between">
+                        <button type="button" class="btn btn-outline-secondary prev-step">
+                            <i class="fas fa-arrow-right me-2"></i> السابق
+                        </button>
+                        <button type="submit" class="btn btn-success">
+                            <i class="fas fa-store me-2"></i> افتح لوحة التحكم
+                        </button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-    <script>
-        document.getElementById('registerForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // جمع بيانات النموذج
-            const formData = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                phone: document.getElementById('phone').value,
-                password: document.getElementById('password').value,
-                address: document.getElementById('address').value,
-                currency: document.getElementById('currency').value,
-                language: document.getElementById('language').value,
-                timestamp: new Date().toISOString()
-            };
-            
-            // هنا يمكنك إضافة كود لإرسال البيانات إلى البريد الإلكتروني
-            // هذا مثال باستخدام mailto (سيعمل عند النقر على الزر إذا كان العميل لديه بريد إلكتروني معين)
-            const mailtoLink = `mailto:noorcombsh@gmail.com?subject=طلب إنشاء متجر جديد&body=الرجاء مراجعة طلب إنشاء متجر جديد:%0D%0A%0D%0A
-            اسم المتجر: ${formData.name}%0D%0A
-            البريد الإلكتروني: ${formData.email}%0D%0A
-            الهاتف: ${formData.phone}%0D%0A
-            العنوان: ${formData.address}%0D%0A
-            العملة: ${formData.currency}%0D%0A
-            اللغة: ${formData.language}%0D%0A%0D%0A
-            وقت الطلب: ${new Date().toLocaleString()}`;
-            
-            window.location.href = mailtoLink;
-            
-            // تخزين البيانات مؤقتاً (بديل للخادم)
-            localStorage.setItem('storeData', JSON.stringify(formData));
-            
-            // توجيه المستخدم إلى لوحة التحكم
-            window.location.href = 'dashboard.html';
-        });
-    </script>
+    <script src="js/main.js"></script>
+    <script src="js/register.js"></script>
 </body>
 </html>
